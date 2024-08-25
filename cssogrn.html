@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device=width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Complatible" content="mtoproje">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>cssproje</title>
+
+  <style>
+    /*
+           
+  
+        h1{
+        color: red;
+        }
+            
+        <link rel="stylesheet" href="test.css" */
+
+    /*--.yazıozellık{
+            color: red;
+            font-size: 15px;
+        }
+  
+        #paragraf1{
+            color: blue;
+            }
+  
+        h2{
+                
+        } */
+
+    /*Renk Kodları
+        h2{
+          color: #CA4327;
+  
+        }
+            
+        .box1{
+        background-color:#499F46;
+        width: 700px;
+        height: 700px;
+  
+        }
+        */
+
+
+    /* .kutu2{
+            background-image: url(resimler/images.png);
+            background-size: cover;
+            background-position: center;
+            width: 400px;
+            height: 400px;
+            color: wheat;
+            text-align: center;
+          }*/
+
+    /*.kutu3{
+            background-color: azure;
+            width: 300px;
+            height: 300px;
+            /*kalınlığı tipi rengi
+            border: 7px inset lightcoral;
+            border-radius: 30px ;
+          }
+          .kutu4{
+            background-color: red;
+            width: 300;
+            height: 150;
+            color: brown;
+          } */
+
+    /* box2{
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+            margin-top: 40px;
+            margin-left: 40px;
+          } */
+
+    /*.box3{
+            background-color: bisque;
+            width: 300px;
+            height: 300px;
+  
+          }
+  
+          .h3{
+            padding-left: 10px;
+            padding-top: 10px;
+          }
+
+          .p{
+            padding-top: 190px;
+            padding-right: 15px;
+            color: black;
+            text-align: right;
+            
+            
+          }
+            */
+
+    /* .box4{
+              background-color: red;
+              width: 300px;
+              height: 300px;
+              display: inline-block;
+              
+
+            }
+
+            .box5{
+              background-color: black;
+              width: 300px;
+              height: 300px;
+              display: inline-block;
+              margin-left: 10px;
+              
+            }
+              */
+
+    /* .metin{
+                color: white;
+                background-color: cadetblue;
+                text-align: center;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                text-decoration: underline;
+                word-spacing: 2px;
+              } */
+
+    /* *{
+                color: blue;
+              } */
+
+    /* p,a{
+                color: blue;
+              } */
+
+    /* div p{ divin içindekilerin tamamını seçer
+                color: red  ;
+              } */
+
+    /* div> p{  annesi sadece div olanları seçer
+                color: chartreuse;
+              } */
+
+    /*div+p{ divden sonraki ilk p yi seçer
+                color: red;
+              } */
+
+    /* div ~ p{ divden sonra gelen tüm p leri seçer divden öncekileri seçmez
+                color: red;
+               } */
+
+    /* div > p :last-child{
+                color: red;
+               } */
+
+    /* div>p:nth-child(3){
+                color: red;
+               } */
+
+    /* div>nav>a:nth-child(3){
+                color: red;
+               } */
+
+    /*.div2>ul>div>li:last-child{
+                color: red;
+               } */
+
+    /*
+               link: ilk hali
+               hover: imleçi üstüne getirince
+               active: tıklayınca
+               visited:link önceden ziyaret edildiyse
+               */
+
+    /*a:link{
+                color:green;
+                text-decoration: none;
+               }
+
+               a:hover{
+                color: blue;
+               }
+
+               a:active{
+                color: aqua;
+               }
+
+               a:visited{
+                color: black;
+               } */
+
+    /*.a{
+                list-style-type: square;
+               }
+
+               .b{
+                list-style-type: lower-roman;
+               } */
+
+    /* tablo özellikleri
+                table{
+                  width: 100%;
+                }
+
+               table th,td{
+                border: 1px solid black;
+                border-collapse: collapse; /*bunun ne olduğuna bak */
+
+    /* #customers th{
+                background-color: green;
+                color: #fff;
+               }
+
+               #customers tr:nth-child(even){
+                background-color: lightgrey;
+               }
+               
+               #customers tr:hover{
+                background-color: red;
+               } */
+
+
+    /*img{
+                   position: absolute;
+                   z-index: -1;
+                   top: 0px;
+                   } */
+
+
+
+    /* .overflow{ 
+                  background-color: lightblue;
+                  height: 200px;
+                  overflow: scroll;
+                } */
+
+    /* ul{ (dikey menü yapımı)
+                  list-style-type: none;
+                  width: 20%;
+                  margin-left: -20px;
+                  
+                }
+
+                ul li{
+                  background-color: rgb(53, 49, 49);
+                  padding: 10px;
+                  
+                }
+                
+                ul li a{
+                  text-decoration: none;
+                  color: whitesmoke;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+                ul li:nth-child(1){
+                  background-color: green;
+                }
+
+                ul li:hover{
+                  background-color: burlywood;
+                  transition: 0.7s;
+                }
+
+                i{
+                  padding-right: 5px;
+                } */
+
+    /*ul { (yatay menü ve açılır menü yapımı)
+      list-style-type: none;
+      width: 100%;
+
+      background-color: rgb(53, 49, 49);
+
+    }
+
+    ul li {
+      display: inline-block;
+      width: 100px;
+      margin-left: -40px;
+      padding: 15px;
+      margin-right: 35px;
+
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: whitesmoke;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+
+    ul li:hover {
+      background-color: burlywood;
+      transition: 0.7s;
+    }
+
+    i {
+      padding-right: 10px;
+    }
+
+    #news-content {
+      position: absolute;
+      z-index: 1;
+      display: none;
+      margin-top: 15px;
+      margin-left: -15px;
+      width: 90px;
+    }
+
+    .news-li:hover #news-content {
+      display: block;
+
+
+    }
+
+   #news-tr{
+    position: absolute;
+    z-index: 1;
+    margin-left: 115px;
+    margin-top: -34px;
+    width: 90px;
+    display: none;
+    }
+
+   .news-2-li:hover #news-tr{
+    display: block;
+   } */
+
+  </style>
+</head>
+
+
+<body>
+  <!--
+    1- etiket kullanarak dahil ete
+    2- style etiketleri ile dahil etme
+    3- harici bir css dosyası ile dahil etme( style tagı yerine kullanılıyor <link rel="stylesheet" href="test.css")
+
+    <h1 style="color: red; background-color: black;">MotoYol</h1>
+    <h1>MotoYol</h1>    
+    <h1>MotoYol</h1>
+    <h1>MotoYol</h1>
+    <h1>MotoYol</h1>
+    <h1>MotoYol</h1>
+    
+    -->
+
+
+  <!--         
+          id: eşşizdir
+           class: birden çok kullanılabilir
+           etiket ismi
+    
+    <p id="paragraf1">Serkan Gedikli</p>
+    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore fugiat nobis sunt v</h2>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <h2 class="yazıozellık">Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+    -->
+
+  <!-- <h2>SERKAN GEDIKLI</h2>
+    <div class="box1">
+
+
+    </div> -->
+
+  <!--Div Nedir?  div elementi bir blok elementtir sayfanın kullanmadığın yerini işgal eder-->
+
+  <!--Background Kullanımı-->
+  <!-- <div class="kutu2"
+       <p>merhaba</p> bu şekilde resimin içine yazı ekliyoruz
+     </div> -->
+
+
+  <!--Border ve Radius Özellikleri-->
+  <!--
+      dotted
+      dashed
+      solid
+      double
+      groove
+      ridge
+      inset
+      outset
+     -->
+
+  <!-- <div class="kutu3">
+
+      <div class="kutu4">
+        <p>iç div</p>
+       </div>
+     </div> -->
+
+  <!--Marjin kullanımı-->
+  <!-- 
+      <h4>Serkan Gedikli</h4>
+     <div class="box2"></div>
+
+     <p>iletişim sayfası</p>
+
+     <p>css dersleri</p> -->
+
+  <!-- Padding kullanımı
+     <div class="box3">
+      <h3 class="h3">Serkan Gedikli</h3>
+      <p>web siteme hoşgeldiniz</p>
+      <p class="p">Telif Hakları Saklıdır</p>
+     </div> -->
+
+  <!-- display kulanımı
+     1-inline : genişlik ve yükseklik verilermez bulunduğu yer kadar kaplar
+     2-block : bulunduğu tüm satırı kaplar
+     3-inline-block : genişlik ve yükseklik verilerbilir
+     -->
+
+  <!--<p style="display: inline;">paragraf3</p>
+     <a href="#">link1</a> -->
+
+  <!--<div class="box4"></div>  
+     <div class="box5"></div> -->
+
+  <!-- 
+     1-color
+     2-background-color
+     3-text-align (yazının konumunu belirler)
+     4-font-weight (yazının boyutunu belirler)
+     5-font-family (yazının tipi)
+     6-font style (yazının stilini belirler örn italik)
+     7-text-transform (yazının tüm harflerini küçük harf veya büyük yapar)
+     8-letter-spacing (harfler arasında ne akdar boşluk olsun)
+     9-text-decoration (yazının altını veya üstüne çizgi çeker)
+     10-word-spacing (kelimeler arasındaki boşluk)
+     -->
+
+  <!-- <p class="metin">Başarı Bedel Gerektirir.</p> -->
+
+  <!-- <div>
+    <p>paragraf1</p>
+    <p>paragraf2</p>
+    <p>paragraf3</p>
+    <p>paragraf4</p>
+    <p>paragraf5</p>
+
+    <nav>
+      <p>paragraf6</p>
+      <a href="">link1</a>
+      <a href="">link2</a>
+      <a href="">link3</a>
+    </nav>
+    <p>paragraf5</p>
+    
+
+   </div>
+
+   <div class="div2">
+    <ul>
+      <li>li etiketi1</li>
+      <li>li etiketi2</li>
+      <li>li etiketi3</li>
+      <div>
+        <li>li etiketi4</li>
+        <li>li etiketi5</li>
+      </div>
+    </ul>
+   </div>
+
+   <p>paragraf9</p> -->
+
+
+  <!-- <a href="https://www.btkakademi.gov.tr/portal/catalog" class="fa-solid fa-house"></a> -->
+
+  <!-- <a href="https://www.google.com.tr">Google</a> -->
+
+  <!--<ul class="a">
+    <li>çay</li>
+    <li>kahve</li>
+    <li>salep</li>
+   </ul>
+
+   <br>
+
+   <ol class="b">
+    <li>çay</li>
+    <li>kahve</li>
+    <li>salep</li>
+   </ol> -->
+
+  <!-- tablo özellikleri
+   <table id="customers">
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Berglunds snabbköp</td>
+      <td>Christina Berglund</td>
+      <td>Sweden</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>Helen Bennett</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Königlich Essen</td>
+      <td>Philip Cramer</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>Yoshi Tannamuri</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>Giovanni Rovelli</td>
+      <td>Italy</td>
+    </tr>
+    <tr>
+      <td>North/South</td>
+      <td>Simon Crowther</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Paris spécialités</td>
+      <td>Marie Bertrand</td>
+      <td>France</td>
+    </tr>
+  </table> -->
+
+  <!-- Z index özelliği (resimlerin arkasına metin koymayı sağlar)
+  <h1>Çiçekler</h1>
+
+  <img src="IMG_1075.PNG" width="200px" height="200px"> -->
+
+  <!-- <div class="overflow">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis cupiditate officiis vel quisquam unde iusto id maiores suscipit sit, quaerat quas vitae excepturi amet corporis voluptas et dolores praesentium, itaque expedita vero doloribus harum. Corporis eum sunt accusantium odio soluta minima assumenda fuga libero voluptatem, maiores vitae cumque fugit quo expedita! Consequuntur quod labore provident quo ratione ipsum modi nulla, cupiditate ea laboriosam eveniet a exercitationem beatae error, accusamus deleniti quidem quia delectus nobis doloremque eligendi eaque dolore aspernatur. In similique animi adipisci, atque officia distinctio. Alias tenetur natus odio dicta placeat culpa consequuntur officia, consequatur beatae, provident explicabo voluptatum.</p>
+     <p>e</p>
+     <p>e</p>
+     <p>e</p>
+     <p>e</p>
+     <p>e</p>
+     <p>e</p>
+     <p>e</p>
+  
+  </div> -->
+
+  <!-- <ul> (dikey menü yapımı)
+    <li><a href="."><i class="fa-solid fa-house"></i>Home</a></li>
+    <li><a href="."><i class="fa-solid fa-newspaper"></i>News</a></li>
+    <li><a href="."><i class="fa-solid fa-address-card"></i>Contact</a></li>
+    <li><a href="."><i class="fa-solid fa-eject"></i>About</a></li>
+  </ul> -->
+
+ <!-- <ul> (yatay menü ve açılır menü yapımı)
+    <li style="background-color: green;"><a href="."><i class="fa-solid fa-house"></i>Home</a></li>
+    <li class="news-li">
+      <a href="."><i class="fa-solid fa-newspaper"></i>News</a>
+
+      <div id="news-content">
+        <ul>
+          <li style="display: block;"><a href=".">News 1</a></li>
+          <li class="news-2-li" style="display: block;"><a href=".">News 2</a>
+
+          <div id="news-tr">
+            <ul>
+              <li><a href=".">Ekonomi</a></li>
+              <li><a href=".">Sağlık</a></li>
+              <li><a href=".">Gündem</a></li>
+            </ul>
+
+          </div>
+          </li>
+          <li style="display: block;"><a href=".">News 3</a></li>
+          <li style="display: block;"><a href=".">News 4</a></li>
+        </ul>
+      </div>
+
+
+  </li>
+  <li><a href="."><i class="fa-solid fa-address-card"></i>Contact</a></li>
+  <li><a href="."><i class="fa-solid fa-eject"></i>About</a></li>
+  </ul> -->
+
+</body>
+
+
+</html>
